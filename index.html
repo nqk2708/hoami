@@ -37,8 +37,16 @@
     <div id="canva">
       <canvas id="canvas"></canvas>
     </div>
-    <audio id="audio" src="./music.mp3" hidden></audio>
+    <audio id="audio" src="./music.mp3" autoplay controls loop
+      style="position: fixed;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 30px;
+      width: 220px;"
+    ></audio>
 
-    <script src="main.js"></script>
+    <script src="./main.js"></script>
+    
   </body>
 </html>
