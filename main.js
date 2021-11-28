@@ -422,3 +422,11 @@ function draw() {
 }
 
 draw();
+
+const audio = document.getElementById('audio')
+audio.play()
+audio.ontimeupdate = () => {
+  if(audio.currentTime === audio.duration) {
+    audio.play()
+  }
+}
